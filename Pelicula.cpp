@@ -24,7 +24,6 @@ Pelicula::Pelicula()
 	string Pelicula :: getTitulo(){
 		return this->titulo;
 	}
-
 	void Pelicula :: setTitulo(string titulo){
 		this->titulo=titulo;
 	}
@@ -48,7 +47,6 @@ Pelicula::Pelicula()
 		int x= rand()%5;
 		return x;
 	}
-
 Pelicula::~Pelicula()
 {
 }

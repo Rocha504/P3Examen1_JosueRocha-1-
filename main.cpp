@@ -26,13 +26,22 @@ int main(int argc, char** argv) {
 			cin>>directoro;
 			cout<<"Ingrese el Genero de la pelicula"<<endl;
 			cin>>genre;
-			Hobject->addPelicula(new Pelicula*(title,directoro,genre,rating));
-			}
-			break;
+			Hobject->addPelicula(new Pelicula(title,directoro,genre,rating));
+		}
+		break;
 		case 2:{
 			 
 		}
-		break;		
+		break;
+		case 3:{
+			 
+		}	
+		break;
+		case 4:{
+			 
+		}
+		break;
+			
 		}
 	return 0;
 }

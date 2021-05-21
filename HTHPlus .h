@@ -19,9 +19,10 @@ class HTHPlus
 		void Encontrar(string pelicula);
 		void Ordenar();
 		vector <Pelicula*> getPelicula();
-		void addPelicula(Pelicula);
+		void addPelicula(Pelicula*);
 		void modifyPelicula(int);
 		void eliminarPelicula(int);
+		
 		
 			
 		

@@ -29,11 +29,11 @@ HTHPlus ::HTHPlus ()
 	void HTHPlus :: addPelicula(Pelicula* pelicula){	
 		peliculas.push_back(pelicula);
 	}
-	void HTHPlus :: modifyPelicula(int){
-		
+	void HTHPlus :: modifyPelicula(int i,Pelicula* pelicula){
+		getPeliculas().at(i)=pelicula;	
 	}
-	void HTHPlus :: eliminarPelicula(int){
-		
+	void HTHPlus :: eliminarPelicula(int i){
+		getPeliculas().at(i)=NULL;
 	}
 	void HTHPlus :: printPeliculas(){
 		for(int i=0;i<this->peliculas.size();i++){

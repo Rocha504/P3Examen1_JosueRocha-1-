@@ -45,14 +45,15 @@ int main(int argc, char** argv) {
 				cin>>directoro;
 				cout<<"Ingrese el Genero de la pelicula"<<endl;
 				cin>>genre;
-				Hobject->getPeliculas().at(i)=new Pelicula(title,directoro,genre,rating);
+				Hobject->modifyPelicula(i,new Pelicula(title,directoro,genre,rating));
 				op=menu();
-				
-				
-				 
 			}
 			break;
 			case 3:{
+				int i;
+				cout<<"Porfavor ingrese la posicion de la pelicula que desea modificar"<<endl;
+				cin>>i;
+				Hobject->eliminarPelicula(i);
 				 
 			}	
 			break;

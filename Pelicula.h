@@ -2,6 +2,9 @@
 #define PELICULA_H
 #include <string>
 using namespace std;
+#include <time.h>
+#include <vector>
+ 
 
 class Pelicula
 {
@@ -23,7 +26,7 @@ class Pelicula
 		string getGenero();
 		void setGenero(string);
 		int getValoracion();
-		void setValoracion(int);
+		void setValoracion();
 		
 	
 };

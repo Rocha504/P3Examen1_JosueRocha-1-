@@ -1,10 +1,12 @@
 #include "Pelicula.h"
+#include <time.h>
 #include <string>
 using namespace std;
 #include <iostream>
 using std::endl;
 using std::cout;
 using std::cin;
+#include <vector>
 
 Pelicula::Pelicula()
 {
@@ -32,8 +34,9 @@ Pelicula::Pelicula()
 	int Pelicula :: getValoracion(){
 			return this->valoracion;
 	}
-	void Pelicula :: setValoracion(int valoracion){
-		this->valoracion=valoracion;
+	void Pelicula :: setValoracion(){
+		srand (time(NULL));
+		this->valoracion=rand()%5;
 	}
 
 Pelicula::~Pelicula()

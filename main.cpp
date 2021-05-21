@@ -6,6 +6,7 @@ using std::cin;
 using namespace std;
 #include "Pelicula.h"
 #include "HTHPlus .h"
+#include <vector>
  
 
 int menu();

@@ -47,6 +47,21 @@ Pelicula::Pelicula()
 		int x= rand()%5;
 		return x;
 	}
+	void Pelicula :: toString(){
+		cout<<"Titulo: ";
+		cout<<this->titulo;
+		cout<<endl;
+		cout<<"Director: ";
+		cout<<this->director;
+		cout<<endl;
+		cout<<"Genero: ";
+		cout<<this->genero;
+		cout<<endl;
+		cout<<"Valoracion: ";
+		cout<<this->valoracion;
+		cout<<"/5";
+		cout<<endl;
+	}
 Pelicula::~Pelicula()
 {
 }

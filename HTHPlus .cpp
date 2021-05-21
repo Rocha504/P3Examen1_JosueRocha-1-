@@ -12,8 +12,8 @@ HTHPlus ::HTHPlus ()
 }
 	 
  
-	
-	vector <Pelicula*> HTHPlus :: getPelicula(){
+	 
+	vector <Pelicula*> HTHPlus :: getPeliculas(){
 		return this->peliculas;
 	}
 	void HTHPlus :: porGenero(string genero){
@@ -35,6 +35,15 @@ HTHPlus ::HTHPlus ()
 	void HTHPlus :: eliminarPelicula(int){
 		
 	}
+	void HTHPlus :: printPeliculas(){
+		for(int i=0;i<this->peliculas.size();i++){
+			cout<<i<<endl;
+			this->peliculas[i]->toString();
+			cout<<endl;	
+		}
+		 		
+	}
+	
 		
 HTHPlus ::~HTHPlus ()
 {

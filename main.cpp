@@ -16,34 +16,55 @@ int main(int argc, char** argv) {
 	HTHPlus* Hobject =new HTHPlus();
 	Pelicula* Pobject=new Pelicula();
 	int op=menu();
-	switch(op){
-		case 1:{
-			string title,directoro,genre;
-			int rating= Pobject->setValoracion();
-			cout<<"Ingrese el Titulo de la pelicula"<<endl;
-			cin>>title;
-			cout<<"Ingrese el Director de la pelicula"<<endl;
-			cin>>directoro;
-			cout<<"Ingrese el Genero de la pelicula"<<endl;
-			cin>>genre;
-			Hobject->addPelicula(new Pelicula(title,directoro,genre,rating));
+	while(op!=7){
+		switch(op){
+			case 1:{
+				string title,directoro,genre;
+				int rating= Pobject->setValoracion();
+				cout<<"Ingrese el Titulo de la pelicula"<<endl;
+				cin>>title;
+				cout<<"Ingrese el Director de la pelicula"<<endl;
+				cin>>directoro;
+				cout<<"Ingrese el Genero de la pelicula"<<endl;
+				cin>>genre;
+				Hobject->addPelicula(new Pelicula(title,directoro,genre,rating));
+				op=menu();
+			}
+			break;
+			case 2:{
+				int i;
+				string title,directoro,genre;
+				int rating= Pobject->setValoracion();
+				Hobject->printPeliculas();
+				cout<<endl;
+				cout<<"Porfavor ingrese la posicion de la pelicula que desea modificar"<<endl;
+				cin>>i;
+				cout<<"Ingrese el Titulo de la pelicula"<<endl;
+				cin>>title;
+				cout<<"Ingrese el Director de la pelicula"<<endl;
+				cin>>directoro;
+				cout<<"Ingrese el Genero de la pelicula"<<endl;
+				cin>>genre;
+				Hobject->getPeliculas().at(i)=new Pelicula(title,directoro,genre,rating);
+				op=menu();
+				
+				
+				 
+			}
+			break;
+			case 3:{
+				 
+			}	
+			break;
+			case 4:{
+				 
+			}
+			break;
+				
 		}
-		break;
-		case 2:{
-			 
-		}
-		break;
-		case 3:{
-			 
-		}	
-		break;
-		case 4:{
-			 
-		}
-		break;
-			
-		}
+	}
 	return 0;
+	
 }
 
 int menu(){

@@ -18,11 +18,11 @@ class HTHPlus
 		void porGenero(string genero);
 		void Encontrar(string pelicula);
 		void Ordenar();
-		vector <Pelicula*> getPelicula();
 		void addPelicula(Pelicula*);
 		void modifyPelicula(int);
 		void eliminarPelicula(int);
-		
+		void printPeliculas();
+		vector <Pelicula*> getPeliculas();
 		
 			
 		

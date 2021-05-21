@@ -28,7 +28,7 @@ class Pelicula
 		void setGenero(string);
 		int getValoracion();
 		int setValoracion();
-		 
+		void toString();
 		
 	
 };

@@ -17,6 +17,7 @@ class Pelicula
 		int valoracion;
 		
 	public:
+		Pelicula(string,string,string, int);
 		Pelicula();
 		~Pelicula();
 		string getTitulo();
@@ -26,7 +27,7 @@ class Pelicula
 		string getGenero();
 		void setGenero(string);
 		int getValoracion();
-		void setValoracion();
+		int setValoracion();
 		
 	
 };

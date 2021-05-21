@@ -6,10 +6,14 @@ using std::cin;
 #include "Pelicula.h"
 #include <vector>
 
+
 HTHPlus ::HTHPlus ()
 {
 }
-	Pelicula* HTHPlus :: getPelicula(){
+	 
+ 
+	
+	vector <Pelicula*> HTHPlus :: getPelicula(){
 		return this->peliculas;
 	}
 	void HTHPlus :: porGenero(string genero){
@@ -22,8 +26,8 @@ HTHPlus ::HTHPlus ()
 		
 	}
 
-	void HTHPlus :: addPelicula(Pelicula){
-		
+	void HTHPlus :: addPelicula(Pelicula* pelicula){	
+		peliculas.push_back(pelicula);
 	}
 	void HTHPlus :: modifyPelicula(int){
 		

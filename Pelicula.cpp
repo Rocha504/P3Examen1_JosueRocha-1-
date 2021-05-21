@@ -8,8 +8,17 @@ using std::cout;
 using std::cin;
 #include <vector>
 
-Pelicula::Pelicula()
+Pelicula::Pelicula(string titulo,string director, string genero, int valoracion)
 {
+	this->titulo=titulo;
+	this->director=director;
+	this->genero=genero;
+	this->valoracion=valoracion;
+	
+}
+Pelicula::Pelicula()
+{ 
+
 }
 
 	string Pelicula :: getTitulo(){
@@ -32,11 +41,12 @@ Pelicula::Pelicula()
 		this->genero=genero;
 	}
 	int Pelicula :: getValoracion(){
-			return this->valoracion;
+		return this->valoracion;
 	}
-	void Pelicula :: setValoracion(){
+	int Pelicula :: setValoracion(){
 		srand (time(NULL));
-		this->valoracion=rand()%5;
+		int x= rand()%5;
+		return x;
 	}
 
 Pelicula::~Pelicula()

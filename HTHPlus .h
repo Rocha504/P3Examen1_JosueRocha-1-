@@ -10,7 +10,7 @@ class HTHPlus
 {
 	
 	private:
-		Pelicula* peliculas;
+		vector <Pelicula*> peliculas;
 		
 	public:
 		HTHPlus ();
@@ -18,7 +18,7 @@ class HTHPlus
 		void porGenero(string genero);
 		void Encontrar(string pelicula);
 		void Ordenar();
-		Pelicula* getPelicula();
+		vector <Pelicula*> getPelicula();
 		void addPelicula(Pelicula);
 		void modifyPelicula(int);
 		void eliminarPelicula(int);
